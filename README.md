@@ -1,5 +1,5 @@
 # Live demo :rocket:
-https://iamcest-traige.herokuapp.com/
+https://iamcest-triage.herokuapp.com/
 * username: admin
 * password: admin
 
