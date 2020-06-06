@@ -7,8 +7,8 @@
 body, html {
     height: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
-    /*background: url(https://i.ytimg.com/vi/uwt2FLoYWe0/maxresdefault.jpg) no-repeat center center fixed;*/
+    background-image: linear-gradient(rgb(11, 54, 122), rgb(40, 115, 220));
+    /* background: url(https://i.ytimg.com/vi/uwt2FLoYWe0/maxresdefault.jpg) no-repeat center center fixed;*/
 }
 
 
