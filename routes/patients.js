@@ -23,7 +23,7 @@ const {ObjectID} = require('mongodb');
     GET /app/addpatient -> go to addPatient page
 */
 router.get('/app/addpatient', (req, res) => {
-    res.render('addpatient', {pageTitle: "Add patient"});
+    res.render('addpatient', {pageTitle: "Cargar Pacientes"});
 });
 
 /*
@@ -43,10 +43,10 @@ router.post('/app/addpatient', (req, res) => {
 
     // Check for empty fields
     if (_.isEmpty(req.body.firstName) || _.isEmpty(req.body.lastName) || _.isEmpty(req.body.hospitalNumber) || !isValidDate(dateOfBirth)) {
-        if (_.isEmpty(req.body.firstName)) req.flash('error_msg', 'Please enter the first name.');
-        if (_.isEmpty(req.body.lastName)) req.flash('error_msg', 'Please enter the last name.');
-        if (_.isEmpty(req.body.hospitalNumber)) req.flash('error_msg', 'Please enter the hospital number.');
-        if (!isValidDate(dateOfBirth)) req.flash('error_msg', 'The date is not valid.');
+        if (_.isEmpty(req.body.firstName)) req.flash('error_msg', 'Ingrese Nombre.');
+        if (_.isEmpty(req.body.lastName)) req.flash('error_msg', 'Ingrese Apellido.');
+        if (_.isEmpty(req.body.hospitalNumber)) req.flash('error_msg', 'Ingrese Hopital ID.');
+        if (!isValidDate(dateOfBirth)) req.flash('error_msg', 'Fecha inválida.');
 
         res.status(400).redirect('/app/addpatient');
     } else {
@@ -119,7 +119,7 @@ router.get('/app/getpatient/:hospitalNumber', (req, res) => {
     }).then((patient) => {
         res.status(200).send(patient);
     }).catch((err) => {
-        req.flash('error_msg', 'Please enter the first name.');
+        req.flash('error_msg', 'Ingrese nombre.');
         res.status(404).redirect('/app');
     });
 });
