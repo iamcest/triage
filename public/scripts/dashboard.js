@@ -112,7 +112,7 @@ $(document).ready(function() {
 		        resposnive: true,
 		        info: false,
                   language: {
-                       searchPlaceholder: "Por servicio...",
+                       searchPlaceholder: "Por Nombre...",
                        sSearch: ""
                 },
                 aaSorting: [[3, 'desc']],
