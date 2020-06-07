@@ -18,13 +18,13 @@ $(document).ready(function() {
            $('#diseases-table').dataTable({
 		      data: diseasesScoresCheckboxes,
 		      columns:[{
-	              title: "Disease",
+	              title: "Enfermedad",
                   width: "50%"
 	          },{
-	              title: "Score",
+	              title: "Riesgo",
                   width: "20%"
 	          },{
-	              title: "Select",
+	              title: "Seleccionar",
                   width: "30%"
 	          }],
 		      scrollY: '40vh',
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		      paging: false,
                 info: false,
                 language: {
-                  searchPlaceholder: "Search disease...",
+                  searchPlaceholder: "Buscar x Enfermedad...",
                   sSearch: ""
                 },
 		 });
@@ -60,10 +60,10 @@ $(document).ready(function() {
            $('#rooms-table').dataTable({
 		      data: roomsScoresCheckboxes,
 		      columns:[{
-	              title: "Room",
+	              title: "Servicio",
                   width: "60%"
                 },{
-	              title: "Select",
+	              title: "Seleccionar",
                   width: "40%"
 	           }],
 		      scrollY: '40vh',
@@ -71,20 +71,9 @@ $(document).ready(function() {
 		      paging: false,
                 info: false,
                 language: {
-                  searchPlaceholder: "Search room...",
+                  searchPlaceholder: "Buscar x servicio...",
                   sSearch: ""
                 },
 		 });
     });
 });
-
-/*
-     Google analytics
-*/
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-97568701-1', 'auto');
-ga('send', 'pageview');
