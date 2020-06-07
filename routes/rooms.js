@@ -88,7 +88,7 @@ router.get('/app/updateroom/:hospitalNumber/:futureRoom', (req, res) => {
                 }
                 res.redirect('/app');
             } else {
-                throw Error("Bad request to change the room. Check the parameters.");
+                throw Error("Bad request to change the service. Check the parameters.");
             }
         }).catch((err) => {
             console.log(err);
