@@ -34,7 +34,7 @@ $(document).ready(function() {
            $("#patient-room-disabled").attr("placeholder", 'Servicio: ' + patient["room"]);
 
            var patientDeleteRoomLink = "/app/updateroom/" + hospitalNumber[3] + "/noroom";
-           $("#patient-room-disabled").after("<a id=\"delete-room-button\" class=\"btn btn-primary btn-lg btn-block\" href=\"" + patientDeleteRoomLink +"\">Move to waiting list</a>");
+           $("#patient-room-disabled").after("<a id=\"delete-room-button\" class=\"btn btn-primary btn-lg btn-block\" href=\"" + patientDeleteRoomLink +"\">Regresar al Triage</a>");
        }
 
 /*
