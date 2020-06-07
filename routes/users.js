@@ -38,7 +38,7 @@ router.post('/app/adduser', (req, res) => {
             }
         });
 
-        req.flash('success_msg', 'User succesfully created');
+        req.flash('success_msg', 'Usuario creado correctamente');
         res.status(200).redirect('/app/systemsettings');
     }
 });
@@ -48,7 +48,7 @@ router.post('/app/adduser', (req, res) => {
 */
 router.get('/app/logout', function(req, res) {
     req.logout();
-    req.flash('success_msg', 'You are logged out');
+    req.flash('success_msg', 'Salió del sistema');
 
     res.status(200).redirect('/');
 });
