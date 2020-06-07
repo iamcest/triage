@@ -20,18 +20,18 @@ $(document).ready(function() {
        Sex of the patient
 */
        if (patient["sex"] === true) {
-           $("#patient-sex-disabled").attr("placeholder", "Male");
+           $("#patient-sex-disabled").attr("placeholder", "Femenino");
        } else if (patient["sex"] === false) {
-           $("#patient-sex-disabled").attr("placeholder", "Female");
+           $("#patient-sex-disabled").attr("placeholder", "Masculino");
        }
 
 /*
       Room of the patient
 */
        if (patient["room"] === "noroom") {
-           $("#patient-room-disabled").attr("placeholder", 'No room assigned');
+           $("#patient-room-disabled").attr("placeholder", 'Servicio pendiente');
        } else {
-           $("#patient-room-disabled").attr("placeholder", 'Room: ' + patient["room"]);
+           $("#patient-room-disabled").attr("placeholder", 'Servicio: ' + patient["room"]);
 
            var patientDeleteRoomLink = "/app/updateroom/" + hospitalNumber[3] + "/noroom";
            $("#patient-room-disabled").after("<a id=\"delete-room-button\" class=\"btn btn-primary btn-lg btn-block\" href=\"" + patientDeleteRoomLink +"\">Move to waiting list</a>");
@@ -81,18 +81,18 @@ $(document).ready(function() {
            $('#diagnosis').dataTable({
 		      data: diseasesScoresCheckboxes,
 		      columns:[{
-	              title: "Disease"
+	              title: "Enfermedad"
 	           },{
-	              title: "Score"
+	              title: "Riesgo"
 	           },{
-	              title: "Diagnosis"
+	              title: "Diagnóstico"
 	           }],
 		      scrollY: '40vh',
 		      scrollCollapse: true,
 		      paging: false,
                 info: false,
                 language: {
-                sSearch: "Search disease"
+                sSearch: "Buscar x Enfermedad"
               }
 		   });
        });
