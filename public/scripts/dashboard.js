@@ -71,7 +71,7 @@ $(document).ready(function() {
 		       resposnive: true,
 		       info: false,
                  language: {
-                   searchPlaceholder: "En espera...",
+                   searchPlaceholder: "Buscar en Triage...",
                    sSearch: ""
                  },
                aaSorting: [[2, 'desc']],
@@ -112,7 +112,7 @@ $(document).ready(function() {
 		        resposnive: true,
 		        info: false,
                   language: {
-                       searchPlaceholder: "Por Internados...",
+                       searchPlaceholder: "Buscar por Internados...",
                        sSearch: ""
                 },
                 aaSorting: [[3, 'desc']],
@@ -144,7 +144,7 @@ $(document).ready(function() {
 			  resposnive: true,
 			  info: false,
                 language: {
-                     searchPlaceholder: "Por Servicio...",
+                     searchPlaceholder: "Buscar por Servicio...",
                      sSearch: ""
               }
 		  });
