@@ -492,7 +492,7 @@ table.dataTable thead .sorting:after {
 .tabbed-panel.panel-primary .nav-tabs > li > a:hover,
 .tabbed-panel.panel-primary .nav-tabs > li > a:focus {
     color: #fff;
-    background-color: #3071a9;
+    background-color: #4285F4;
     border-color: transparent;
 }
 .tabbed-panel.panel-primary .nav-tabs > li.active > a,
