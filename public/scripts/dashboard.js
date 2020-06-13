@@ -97,7 +97,7 @@ $(document).ready(function() {
 	                title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  no.",
                      width: "25%"
 	            },{
-	                title: "Internados",
+	                title: "En Atención",
                      width: "45%"
 	            },{
 	           	 title: "Servicio",
