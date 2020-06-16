@@ -101,10 +101,10 @@ $(document).ready(function() {
                      width: "60%"
 	            },{
 	           	 title: "Servicio",
-                     width: "15%"
+                     width: "20%"
 	            },{
 	           	 title: "Riesgo",
-                     width: "10%"
+                     width: "5%"
 	            }],
 		        scrollY: '60vh',
 		        scrollCollapse: true,
