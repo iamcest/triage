@@ -57,10 +57,10 @@ $(document).ready(function() {
 		       data: patientsWaitingTableConstructor,
 		       columns: [{
 		       	 title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  no.",
-                     width: "30%"
+                     width: "20%"
 		       }, {
 		           title: "Triage",
-                     width: "60%"
+                     width: "70%"
 		       }, {
 		           title: "Riesgo",
                      width: "10%"
@@ -95,16 +95,16 @@ $(document).ready(function() {
    			   data: patientsInHospitalTableConstructor,
 		        columns:[{
 	                title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  no.",
-                     width: "25%"
+                     width: "15%"
 	            },{
 	                title: "En Atención",
-                     width: "45%"
+                     width: "60%"
 	            },{
 	           	 title: "Servicio",
                      width: "15%"
 	            },{
 	           	 title: "Riesgo",
-                     width: "15%"
+                     width: "10%"
 	            }],
 		        scrollY: '60vh',
 		        scrollCollapse: true,
