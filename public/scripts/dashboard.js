@@ -98,10 +98,10 @@ $(document).ready(function() {
                      width: "15%"
 	            },{
 	                title: "En Atención",
-                     width: "60%"
+                     width: "55%"
 	            },{
 	           	 title: "Servicio",
-                     width: "20%"
+                     width: "25%"
 	            },{
 	           	 title: "Riesgo",
                      width: "5%"
