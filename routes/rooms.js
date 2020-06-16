@@ -145,13 +145,6 @@ router.post('/app/addroom', (req, res) => {
             name: roomName,
             availability: false
         });
-        
-        // check that the Url is a String
-    if (_.isString(roomUrl) && !_.isNaN(roomUrl)) {
-        var room = Room({
-            name: roomUrl,
-            availability: false
-        });
 
         room.save().then((room) => {
             console.log('Room added');
