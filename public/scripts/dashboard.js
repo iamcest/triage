@@ -136,7 +136,7 @@ $(document).ready(function() {
 		  $('#free-rooms').dataTable({
 			  data: freeRoomsTableConstructor,
 			  columns:[{
-				  title: "Servicios disponibles"
+				  title: "Servicios"
 			  }],
 			  scrollY: '60vh',
 			  scrollCollapse: true,
