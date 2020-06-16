@@ -20,9 +20,9 @@ $(document).ready(function() {
        Sex of the patient
 */
        if (patient["sex"] === true) {
-           $("#patient-sex-disabled").attr("placeholder", "Femenino");
-       } else if (patient["sex"] === false) {
            $("#patient-sex-disabled").attr("placeholder", "Masculino");
+       } else if (patient["sex"] === false) {
+           $("#patient-sex-disabled").attr("placeholder", "Femenino");
        }
 
 /*
