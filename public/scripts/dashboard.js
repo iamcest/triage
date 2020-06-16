@@ -112,7 +112,7 @@ $(document).ready(function() {
 		        resposnive: true,
 		        info: false,
                   language: {
-                       searchPlaceholder: "Buscar por Internados...",
+                       searchPlaceholder: "Buscar en Atención...",
                        sSearch: ""
                 },
                 aaSorting: [[3, 'desc']],
