@@ -137,8 +137,7 @@ router.get('/app/swappatients/:patientWithRoom/:patientWithoutRoom', (req, res) 
     POST /app/addroom -> add a new room in the system
 */
 router.post('/app/addroom', (req, res) => {
-    var roomName = req.body.roomName,
-    var roomUrl  = req.body.roomUrl;
+    var roomName = req.body.roomName;
 
     // check that the name is a String
     if (_.isString(roomName) && !_.isNaN(roomName)) {
