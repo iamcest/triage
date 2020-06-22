@@ -35,9 +35,9 @@ $(document).ready(function() {
                  // check if he need to be updated
                  // @@@@@@@@@@@@@@@@@@@@@@@@@@ -> need to change the time for the interval to be updated
                  if (timeDifferenceInMinutes > 1440) {
-                    patientsRowConstructor.push("<span class=\"glyphicon glyphicon-warning-sign\" style=\"color: red;\"></span>   " + patient["firstName"] + " " + patient["lastName"]);
+                    patientsRowConstructor.push("<span class=\"glyphicon glyphicon-warning-sign\" style=\"color: red;\"></span>   " + patient["lastName"] + " " + patient["firstName"]);
                  } else {
-                    patientsRowConstructor.push(patient["firstName"] + " " + patient["lastName"]);
+                    patientsRowConstructor.push(patient["lastName"] + " " + patient["firstName"]);
                  }
 
 
